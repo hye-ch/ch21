@@ -3,24 +3,56 @@
 <head>
     <title>ARTWORK</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <Style>
+        #context1{
+            padding:0px;
+        }
+        #arrange{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    </Style>
 </head>
 
 <body>
     
     <h1><a href="index.html">ch21</a></h1>
-    <ul>
-        <li><a href="about.html">ABOUT</a></li>
-        <li><a href="artwork.html">ARTWORK</a></li>
-        <li><a href="wallpaper.html">WALLPAPER</a></li>
-    </ul>
+    <div id="grid">
+        <ul>
+            <li><a href="about.html" style="color:seagreen">ABOUT</a></li>
+            <li><a href="artwork.html" style="color:gold; text-decoration:underline">ARTWORK</a></li>
+            <li><a href="wallpaper.html" style="color:steelblue">WALLPAPER</a></li>
+        </ul>
 
-    <h2> | ARTWORK</h2>
- 
-    1. SE
-    <br><br><img src="SE.jpg" width="30%">
+        <div id="context1">
+        <h2> | ARTWORK</h2>
+        
+        <div id="arrange">
+            <div id="SE">        
+            1. SE
+            <br><br><img src="SE.jpg" width="50%">
+            </div>
 
-   <br><br> 2. you will find yourself nodding ur head
-   <br><br><img src="you will find yourself nodding ur head_2.jpg" width="30%">
-    <p><iframe width="30%" src="https://www.youtube.com/embed/w5K44inIElY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+            <div id="ywfynuh">
+            2. you will find yourself nodding ur head
+            (<a href="https://www.youtube.com/embed/w5K44inIElY" target="_blank" title="click me" style="color:gold; text-decoration:underline">making video</a>)
+            <br><br><img src="you will find yourself nodding ur head_2.jpg" width="50%">
+            <!-- <p><iframe width="30%" src="https://www.youtube.com/embed/w5K44inIElY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p> -->
+            </div>
+
+            <div id="GNO">
+            <br><br> 3. girls night out
+            <br><br><img src="girls night out.jpg" width="50%">
+            </div>
+
+            <div id="well-being">
+            <br><br> 4. well-being
+            <br><br><img src="well-being.jpg" width="50%">
+            </div>
+        </div>
+        </div>
+
+    </div>
 </body>
 </html>
