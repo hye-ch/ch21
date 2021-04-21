@@ -3,28 +3,54 @@
 <head>
     <title>WALLPAPER</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <Style>
+        #context1{
+            padding:0px;
+        }
+        #arrange{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    </Style>
 </head>
 
 <body>
     
     <h1><a href="index.html">ch21</a></h1>
-    <ul>    
-        <li><a href="about.html">ABOUT</a></li>
-        <li><a href="artwork.html">ARTWORK</a></li>
-        <li><a href="wallpaper.html">WALLPAPER</a></li>
-    </ul>
+    <div id="grid">
+        <ul>    
+            <li><a href="about.html" style="color:seagreen">ABOUT</a></li>
+            <li><a href="artwork.html" style="color:gold">ARTWORK</a></li>
+            <li><a href="wallpaper.html" style="color:steelblue; text-decoration:underline">WALLPAPER</a></li>
+        </ul>
 
-    <h2> | WALLPAPER </h2>
-    <h3> 2021 </h3>
-    <br> January <br><br>
-    <img src="JAN_FE_calendar.jpg" width="30%">
-    <br><br><br> Febuary <br><br>
-    <img src="FEB_calendar.jpg" width="30%">
-    <br><br><br> March <br><br>
-    <img src="MAR_FE_calendar.jpg" width="30%">
-    <br><br><br> April <br><br>
-    <img src="APR_calendar.jpg" width="30%">
-    
+        <div id="context1">
+        <h2> | WALLPAPER </h2>
+        <h3>  &nbsp; &nbsp;<a style="font-size: 25px;">2021</a> </h3>
+        <div id= "arrange">
+            <div id="JAN">
+            <br> &nbsp;&nbsp; - <a style="font-size: 17.5px;">January</a> <br><br>
+            &nbsp;&nbsp; <img src="JAN_FE_calendar.jpg" width="50%">
+            </div>
+            
+            <div id="FEB">
+            <br> - <a style="font-size: 17.5px;">Febuary</a> <br><br>
+            <img src="FEB_calendar.jpg" width="50%">
+            </div>
+
+            <div id="MAR">
+            <br><br><br> &nbsp;&nbsp; - <a style="font-size: 17.5px;">March</a></a> <br><br>
+            &nbsp;&nbsp; <img src="MAR_FE_calendar.jpg" width="50%">
+            </div>
+            
+            <div id="APR">
+            <br><br><br> - <a style="font-size: 17.5px;">April</a> <br><br>
+            <img src="APR_calendar.jpg" width="50%">
+            </div>
+        </div>
+        </div>
+    </div>
     
 </body>
 </html>
