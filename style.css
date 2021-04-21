@@ -1,0 +1,29 @@
+a {
+    text-decoration: none;
+}
+h1 {
+    font-size: 50px;
+    text-align: center;
+    border-bottom:2px solid gray;
+    margin:0;
+    padding:20px;
+}
+#grid ul{
+    border-right:1px dotted gray ;
+    width:120px;
+
+}
+#grid{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+}
+
+/* screen width < 800px */
+@media(max-width: 800px) {
+    #grid{
+    display: block;
+    }
+    #grid ul{
+    border-right:none ;
+    }
+}
