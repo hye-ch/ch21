@@ -11,7 +11,6 @@ h1 {
 #grid ul{
     border-right:1px dotted gray ;
     width:135px;
-
 }
 #grid{
     display: grid;
