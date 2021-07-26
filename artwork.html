@@ -5,27 +5,33 @@
     <meta charset="utf-8">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Gloria+Hallelujah&family=Noto+Sans+KR&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
     <Style>
-        #grid{
-            font-family: 'Dela Gothic One', cursive; line-height: 1.5;
-        }
         #context1{
             padding:0px;
         }
-        #arrange{
+        .arrange{
             display: grid;
             grid-template-columns: 1fr 1fr;
-            font-family: 'Gloria Hallelujah', cursive; font-weight: bold;
+            gap: 50px 20px;
+        }
+        .container{
+            place-self: center;
         }
         h1{
             font-family: 'Dela Gothic One', cursive;
+        }
+        img{
+            width:75%;
+        }
+        a{
+           color:white; text-decoration: none;
         }
     </Style>
 </head>
 
 <body>
-    
+
     <h1><a href="index.html">ch21</a></h1>
     <div id="grid">
         <ul>
@@ -36,29 +42,62 @@
 
         <div id="context1">
         <h2> | ARTWORK</h2>
+        <br>
         
-        <div id="arrange">
-            <div id="SE">        
-            1. SE
-            <br><br><img src="SE.jpg" width="50%">
+        <div class="arrange">
+
+            <div class="container">
+                <div class="pic">
+                <img src="SE.jpg">
+                
+                <div class="middle">
+                  <div class="text">
+                    <!-- 링크걸리게해주세요   -->
+                    <a href="SE.html".html">SE</a>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <div id="ywfynuh">
-            2. you will find yourself nodding ur head
-            (<a href="https://www.youtube.com/embed/w5K44inIElY" target="_blank" title="click me" style="color:gold; text-decoration:underline">making video</a>)
-            <br><br><img src="you will find yourself nodding ur head_2.jpg" width="50%">
-            <!-- <p><iframe width="30%" src="https://www.youtube.com/embed/w5K44inIElY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p> -->
+            <div class="container">
+                <div class="pic">
+                <img src="you will find yourself nodding ur head_2.jpg">
+                
+                <div class="middle">
+                  <div class="text">
+                    <!-- 링크걸리게해주세요   -->
+                    <a href="nodding.html".html">you will find yourself nodding ur head</a>  
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <div id="GNO">
-            <br><br> 3. girls night out
-            <br><br><img src="girls night out.jpg" width="50%">
+            <div class="container">
+                <div class="pic">
+                <img src="girls night out.jpg">
+                
+                <div class="middle">
+                  <div class="text">
+                    <!-- 링크걸리게해주세요   -->
+                    <a href="girlsnightout.html".html">girls night out</a>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <div id="well-being">
-            <br><br> 4. well-being
-            <br><br><img src="well-being.jpg" width="50%">
+            <div class="container">
+                <div class="pic">
+                <img src="well-being.jpg">
+                
+                <div class="middle">
+                  <div class="text">
+                    <!-- 링크걸리게해주세요   -->
+                    <a href="wellbeing.html".html">well-being</a>  
+                  </div>
+                </div>
+              </div>
             </div>
+
         </div>
         </div>
 
