@@ -8,7 +8,21 @@
     <link rel="stylesheet" href="style.css">
     <Style>
         h3{
-            font-family: 'Gloria Hallelujah', cursive;
+            text-align: center;
+            font-size: 35px;
+            color: #A1A1A1;
+            margin-bottom: 5px;
+        }
+        .discription{
+            text-align: center;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 0.9rem;
+            width: 400px;
+            margin-left: 450px;
+            color:white;
+            background-color: #A1A1A1;
+            border-radius: 30px;
+            padding: 7px;
         }
         #context1{
             padding:0px;
@@ -16,7 +30,19 @@
         #arrange{
             display: grid;
             grid-template-columns: 1fr 1fr;
-            font-family: 'Gloria Hallelujah', cursive; font-weight: bold;
+            gap: 60px 0px;
+        }
+        .month{
+            width:250px;
+            font-size:17.5px
+            place-items: center;
+            place-self: center;
+            text-align: center;
+        }
+        .month img{
+            display: block;
+            margin:0;
+            width: 100%;    
         }
     </Style>
 </head>
@@ -32,37 +58,48 @@
         </ul>
 
         <div id="context1">
-        <h2> | WALLPAPER </h2>
-        <h3>  &nbsp; &nbsp;<a style="font-size: 35px;">2021</a> </h3>
+        <h2>WALLPAPER </h2>
+        <h3>2021</h3>
+        <div class="discription">사진 클릭 시, 해당 달력을 다운받을 수 있는 사이트로 이동합니다!</div>
+        <br><br>
         <div id= "arrange">
-            <div id="JAN">
-             &nbsp;&nbsp; - <a style="font-size: 17.5px;">January</a> <br><br>
-            &nbsp;&nbsp; <img src="JAN_FE_calendar.jpg" width="50%">
+            <div class="month">
+                <a href="https://blog.naver.com/ch21vibe/222191520161"><img src="JAN_FE_calendar.jpg"></a>
+                <p>January</p>
             </div>
             
-            <div id="FEB">
-             - <a style="font-size: 17.5px;">February</a> <br><br>
-            <img src="FEB_calendar.jpg" width="50%">
+            <div class="month"> 
+                <a href="https://blog.naver.com/ch21vibe/222225702838"><img src="FEB_calendar.jpg"></a>
+                <p>Feburary</p>
             </div>
 
-            <div id="MAR">
-            <br><br><br> &nbsp;&nbsp; - <a style="font-size: 17.5px;">March</a></a> <br><br>
-            &nbsp;&nbsp; <img src="MAR_FE_calendar.jpg" width="50%">
+            <div class="month"> 
+                <a href="https://blog.naver.com/ch21vibe/222259753239"><img src="MAR_FE_calendar.jpg"></a>
+                <p>March</p>
             </div>
             
-            <div id="APR">
-            <br><br><br> - <a style="font-size: 17.5px;">April</a> <br><br>
-            <img src="APR_calendar.jpg" width="50%">
+            <div class="month">   
+                <a href="https://blog.naver.com/ch21vibe/222291964562"><img src="APR_calendar.jpg"></a>
+                <p>April</p>
             </div>
 
-            <div id="MAY">
-            <br><br><br> &nbsp;&nbsp; - <a style="font-size: 17.5px;">May</a></a> <br><br>
-            &nbsp;&nbsp; <img src="MAY_FE_calendar.jpg" width="50%">
+            <div class="month">    
+                <a href="https://blog.naver.com/ch21vibe/222329282875"><img src="MAY_FE_calendar.jpg"></a>
+                <p>May</p>
             </div>
 
-            <div id="JUN">
-            <br><br><br> - <a style="font-size: 17.5px;">June</a> <br><br>
-            <img src="JUN_calendar.jpg" width="50%">
+            <div class="month">    
+                <a href="https://blog.naver.com/ch21vibe/222351299307"><img src="JUN_calendar.jpg"></a>
+                <p>June</p>
+            </div>
+            <div class="month">
+                <a href="https://blog.naver.com/ch21vibe/222414417023"><img src="JUL_FE_calendar.jpg"></a>
+                <p>July</p>
+            </div>
+
+            <div class="month">
+                <a href=""><img src="AUG_calendar.jpg" alt=""></a>
+                <p>August</p>
             </div>
         </div>
         </div>
