@@ -5,9 +5,102 @@
     <meta charset="utf-8">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Gloria+Hallelujah&family=Noto+Sans+KR&display=swap" rel="stylesheet">
-    <!-- <meta name="viewport" conten="width=device-width, initial-scale=1.0"> -->
     <link rel="stylesheet" href="style.css">
     <Style>
+        .mySlides {display: none}
+        img {
+            vertical-align: middle;
+            width: 35%;
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+        position: relative;
+        /* margin: auto; */
+            text-align: center;
+        }
+
+        /* Next & previous buttons */
+        .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%; left: 385px;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: #A1A1A1;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+        right: -60px;
+        margin-left: 50px;
+        border-radius: 3px 0 0 3px;
+        }
+
+        .button{
+            margin-right:820px;
+        }
+
+        /* Caption text */
+        .text {
+        color: #A1A1A1;
+        font-size: 15px;
+        font-family: 'Noto Sans KR', sans-serif;
+        margin-left: 10px;
+        position: absolute;
+        bottom: -18px;
+        width: 100%;
+        text-align: center;
+        }
+
+
+        /* The dots/bullets/indicators */
+        .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+        }
+
+        .active, .dot:hover {
+        background-color: #717171;
+        }
+        .dott{
+            text-align: center;
+            margin-left: 13px;
+        }
+        /* Fading animation */
+        .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+        }
+
+        @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+        .prev, .next,.text {font-size: 11px}
+        }
         .context2{
             text-align: center;
         }
@@ -40,8 +133,31 @@
 
         <div class="context2">
         <h3>girls night out</h3>
-        <img src="girls night out.jpg" style="width:35%">
-        <br><br>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <img src="girls night out.jpg">
+              <div class="text">main image</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="girls night out_detail.jpg">
+              <div class="text">detail cut</div>
+            </div>
+        
+            <div class="button">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div>
+        <br>
+                
+        <div class="dott">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+        </div>
+
+        <br>
         <iframe width="50%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/670724924&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/ch_hye" title="ch_hye" target="_blank" style="color: #cccccc; text-decoration: none;">ch_hye</a> · <a href="https://soundcloud.com/ch_hye/girls-night-out" title="girls night out" target="_blank" style="color: #cccccc; text-decoration: none;">girls night out</a></div>
         <br>
             <div class="tracklist_1" style="font-size: 1.2rem;">*track list*</div>
@@ -63,7 +179,34 @@
         </div>
     </div>
 
-
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
 
 </body>
 </html>
